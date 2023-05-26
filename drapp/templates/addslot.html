@@ -1,0 +1,32 @@
+
+{% extends 'instructor_base.html' %}
+{% load static %}
+{% block title %}
+{% endblock %}
+{% block background %} {% endblock %}
+{% block body %}
+<center>
+<div class="col-lg-8 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="bg-primary text-center p-5">
+        <h1 class="mb-4">ADD SLOT</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <div class="form-floating">
+                        <input type="time" class="form-control border-0" id="gname" name="slottime" placeholder="Guardian Name" min="09:00:00" max="21:00:00">
+
+                        <label for="slottime">SLOT TIME</label>
+                    </div>
+                </div>
+                               <div class="col-12">
+                    <button class="btn btn-dark w-100 py-3" type="submit">ADD</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div> </center>
+{% endblock %}

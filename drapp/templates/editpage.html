@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/reg/css/profile.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+    body{
+        background: url("static/images/3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        background: linear-gradient();
+        height: 100%
+    }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="card">
+            <h1>Welcome </h1>
+            <p><strong>Email:{{}}</strong> </p>
+
+            <p>Phone Number:</p>
+            <p></p>
+            <a href="/">
+            <button type="submit" class="submit" ><i class="fas fa-sign-out-alt"></i> Logout</button>
+          </a>
+            
+            <div class="card-container">
+                <!-- <a href="edit_profile?id={{ i.id }}"> -->
+                  <a href="updateprofile">
+                <button class="edit-button"><i class="fas fa-edit">Edit Profile</i></button>
+                </a>
+            </div>
+
+            <div class="card-container2">
+                <a href="/student_home">
+                <button class="cp_button"><i class="fa fa-home">Home Page</i></button>
+                </a>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+ 
+</body>
+</html>
